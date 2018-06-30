@@ -12,6 +12,11 @@ return [
                     'dbname' => 'reporting',
                 ],
 
+        'elastic' => [
+            'host' => ['192.168.100.26:9300'],
+        ],
+
+
         // Renderer settings
         'view' => [
             'template_path' => __DIR__ . '/../templates'

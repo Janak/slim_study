@@ -9,6 +9,7 @@ $app->get('/hello/{name}', function (Request $request, Response $response, array
     $tickets = new TicketMapper($this->db);
 
     $this->logger->addInfo('Something interesting happened');
+    var_dump($this->elastic);
     $response = $this->view->render($response, 'tickets.phtml', ['tickets' => $tickets->getTickets()]);
     return $response;
 });
